@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zertifikate Slideshow</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      padding: 40px 20px;
+    }
+
+    .gallery-section {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .gallery-section p.intro {
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .slideshow-container {
+      position: relative;
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .slide {
+      display: none;
+      animation: fade 0.4s ease-in-out;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slide-content {
+      padding: 24px;
+      text-align: left;
+    }
+
+    .slide-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .slide-content p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      padding: 14px 18px;
+      color: white;
+      font-weight: bold;
+      font-size: 22px;
+      border: none;
+      background: rgba(0, 0, 0, 0.45);
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev {
+      left: 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .dots {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 14px;
+      width: 14px;
+      margin: 0 6px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #333;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .slide img {
+        height: 250px;
+      }
+
+      .slide-content {
+        padding: 18px;
+      }
+
+      .slide-content h3 {
+        font-size: 1.2rem;
+      }
+
+      .prev,
+      .next {
+        font-size: 18px;
+        padding: 10px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="gallery-section">
+    <h2>Wettbewerbe & Zertifikate</h2>
+    <p class="intro">
+      Hier sind einige Wettbewerbe und Zertifikate, die mein Interesse an Informatik,
+      Mathematik und technischen Projekten zeigen.
+    </p>
+
+    <div class="slideshow-container">
+
+      <div class="slide">
+        <img src="assets/Biber_1.pdf" alt="Informatik-Biber Urkunde" />
+        <div class="slide-content">
+          <h3>Informatik-Biber</h3>
+          <p>
+            Beim Informatik-Biber habe ich einen 3. Rang erreicht. Der Wettbewerb stärkt
+            logisches Denken, algorithmisches Verständnis und strukturiertes Problemlösen.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="C:\Users\betun\Desktop\website\assets\Mathe-Olympiade_1.pdf" alt="Mathematik-Olympiade Urkunde" />
+        <div class="slide-content">
+          <h3>Mathematik-Olympiade</h3>
+          <p>
+            Ich habe mehrfach an der zweiten Runde der Mathematik-Olympiade in Niedersachsen
+            teilgenommen. Dadurch konnte ich meine analytischen Fähigkeiten weiterentwickeln.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="bilder/make-your-school.jpg" alt="Make Your School Zertifikat" />
+        <div class="slide-content">
+          <h3>Make Your School</h3>
+          <p>
+            Im Rahmen des Projekts „Make Your School“ habe ich an einem Hackday und am Maker
+            Festival teilgenommen. Dort ging es um Technik, Teamarbeit und kreative Problemlösung.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="bilder/first-lego-league.jpg" alt="First Lego League" />
+        <div class="slide-content">
+          <h3>FIRST LEGO League</h3>
+          <p>
+            Über mehrere Jahre hinweg habe ich an der FIRST LEGO League teilgenommen und war
+            dabei größtenteils für den Programmierbereich mitverantwortlich.
+          </p>
+        </div>
+      </div>
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+</html>
