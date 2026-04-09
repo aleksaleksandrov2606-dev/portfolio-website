@@ -25,12 +25,6 @@ h1 {
     font-size: 100px;
 }
 
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    max-width: 800px;
-}
-
 a:link {
     text-decoration: none;
     color: black;
@@ -49,7 +43,7 @@ a:hover {
 
 div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
