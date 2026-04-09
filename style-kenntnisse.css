@@ -57,27 +57,9 @@ div {
     align-items: center;
 }
 
-.kenntnisse-container {
-    background-color: rgb(166, 183, 237);
-
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
 .kenntnisse-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 
-    width: 100%;
-    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
