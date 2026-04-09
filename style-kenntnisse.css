@@ -57,6 +57,17 @@ div {
     align-items: center;
 }
 
+.kenntnisse-container {
+    background-color: rgb(166, 183, 237);
+
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
 
 footer {
     background-color: rgb(166, 183, 237);
