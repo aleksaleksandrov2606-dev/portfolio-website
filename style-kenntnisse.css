@@ -71,9 +71,9 @@ div {
 
 .kenntnisse-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
