@@ -62,7 +62,7 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 
-    position: static;
+    position: sticky;
     height: 100px;
     margin-top: 10px;
 
