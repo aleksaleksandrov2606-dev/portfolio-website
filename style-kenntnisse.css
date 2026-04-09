@@ -69,6 +69,17 @@ div {
     margin-top: 10px;
 }
 
+.kenntnisse-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
 footer {
     background-color: rgb(166, 183, 237);
 
