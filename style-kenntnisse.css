@@ -57,6 +57,10 @@ div {
     align-items: center;
 }
 
+.kenntnisse-container {
+    width: 500px
+}
+
 footer {
     background-color: rgb(166, 183, 237);
 
